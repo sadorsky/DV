@@ -110,13 +110,15 @@ img {
 }
 
 .banner-products {
-    background-image: url(../img/products.jpg);
-    filter: grayscale(0.3);
+	background-image: url(../img/products.jpg);
+	/* -webkit-filter: grayscale(0.3);
+    filter: grayscale(0.3); */
 }
 
 .banner-business {
-    background-image: url(../img/2.jpg);
-    filter: grayscale(0.2);
+	background-image: url(../img/2.jpg);
+	/* -webkit-filter: grayscale(0.2);
+    filter: grayscale(0.2); */
 }
 
 
