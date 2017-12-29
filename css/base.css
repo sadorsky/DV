@@ -1,0 +1,198 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+    margin-right: 10px;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+
+/*
+.comp-logo {
+	width: 150px;
+    margin: 0;
+    align-content: center;
+}
+*/
+
+.main-nav {
+	margin-top: 5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.history-img {
+    border-radius: 5px;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner {
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    padding: 3.2em 0;
+	margin-bottom: 48px;
+    
+	-webkit-box-shadow: inset 0px 0px 15px 1px rgba(0,0,0,0.57);
+	-moz-box-shadow: inset 0px 0px 15px 1px rgba(0,0,0,0.57);
+	box-shadow: inset 0px 0px 15px 1px rgba(0,0,0,0.57);
+}
+
+.banner-main {
+    background-image: url(../img/2.jpg);
+}
+
+.banner-products {
+    background-image: url(../img/products.jpg);
+    filter: grayscale(0.3);
+}
+
+.banner-business {
+    background-image: url(../img/2.jpg);
+    filter: grayscale(0.2);
+}
+
+
+
+.col,
+.box {
+	padding-right: 1em;
+	padding-left: 1em;
+    margin-bottom: 40px;
+}
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 250px;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+.feat-img {
+	border-radius: 5px;
+}
+
+.button-menu {
+    display: inline-block;
+}
+
+.button-more {
+	color: #fff;
+	text-align: center;
+	padding: .625em 1.25em;
+	background: #3acec2;
+	border-radius: .35em;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.shadow {
+    text-shadow: 4px 2px 10px rgba(0, 0, 0, 1);
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.tagline {
+		font-size: 1.4em;
+	}
+    
+    .small {
+		font-size: 1em;
+	}
+    
+    
+    
+}
+@media (min-width: 1025px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+}

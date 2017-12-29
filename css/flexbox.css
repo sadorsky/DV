@@ -1,0 +1,58 @@
+/* ================================= 
+  FLEXBOX
+==================================== */
+
+@media (min-width: 769px) {
+    
+    .main-header,
+    .main-nav,
+    .row,
+    .comp-logo,
+    .box {
+        display: flex;
+    }
+    
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .col,
+    .box {
+        flex: 1 50%;
+        flex-direction: column;
+    }
+    
+    
+    .row {
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (min-width: 1025px) {
+    
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .primary {
+        flex: 1;
+    }
+    
+    .col,
+    .box {
+        flex-basis: 0;
+    }
+    
+    .secondary {
+        flex-grow: 1.4;
+    }
+    
+    .primmary-welcome {
+        flex-grow: 2;
+    }
+    
+}
