@@ -17,14 +17,14 @@
 </head>
 <body>
 	
-	<header class="main-header">
+	<header id="header" class="main-header">
 <!--		<img class="comp-logo" src="img/comp-logo.png" alt="company logo">-->
         <h1 class="name"><a href="#">Dew Valley Foods</a></h1>
 		<ul class="main-nav">
-			<li><a class="button-menu" href="#">About Us</a></li>
-			<li><a class="button-menu" href="#">Products</a></li>
-			<li><a class="button-menu" href="#">Our Business</a></li>
-			<li><a class="button-menu" href="#">Contact</a></li>
+			<li><a class="button-menu" href="#header">About Us</a></li>
+			<li><a class="button-menu" href="#products">Products</a></li>
+			<li><a class="button-menu" href="#business">Our Business</a></li>
+			<li><a class="button-menu" href="#contact">Contact</a></li>
 		</ul>
 	</header><!--/.main-header-->   
 
@@ -54,7 +54,7 @@
         
 	</div>
     
-    <div class="banner-products banner txt-center">
+    <div id="products" class="banner-products banner txt-center">
         <h1 class="headline shadow">Our Products</h1>
         <span class="small shadow">We supply a full range of cooked bacon,<br> with each order prepared to your specification from high quality raw material which we cure ourselves.</span>
     </div><!--/Our Products Banner -->
@@ -90,7 +90,7 @@
         
     </div>
     
-    <div class="banner-business banner txt-center">
+    <div id="business" class="banner-business banner txt-center">
         <h1 class="headline shadow">Our Business</h1>
         <span class="small shadow">We believe in working together, and all Cooked Bacon orders are prepared to our customers’ own specification in our ultra-modern factory.</span>
     </div><!--/Our Business Banner -->
@@ -123,10 +123,18 @@ Strategic planning and product innovation are at the heart of our success, suppo
             <h2>Innovation &amp; NPD</h2>
             <img src="img/npd-1.jpg">
             <p>Dew Valley Foods offer highly innovative products to suit a wide range of applications. We are confident that we can create bacon solutions to meet your business needs. We pride ourselves on being able to deliver innovative bacon products in an ever changing market.</p>
-            <a class="button-more" data-toggle="modal" href="#full-width">Read More</a>
+            <button class="button-more" type="button" data-toggle="modal" data-target="#myModal">Read More</button>
         </div>
         
     </div>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              ...
+            </div>
+          </div>
+        </div>
     
     
  

@@ -19,8 +19,12 @@ ul {
   list-style: none;
 }
 
+h2 {
+    font-size: 1.7em;
+}
+
 p {
-	font-size: .95em;
+	font-size: 1.1em;
 	margin-bottom: 1.8em;
 }
 
@@ -36,9 +40,21 @@ h3 {
 }
 
 a {
+    font-size: 1.1em;
 	text-decoration: none;
     margin-right: 10px;
 }
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*
+.border-menu {
+    border-right: 1px solid #093a58;
+}
+*/
 
 img {
 	max-width: 100%;

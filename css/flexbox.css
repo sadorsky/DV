@@ -29,6 +29,10 @@
         flex-wrap: wrap;
     }
     
+        .secondary-welcome {
+        flex: 4;
+    }
+    
 }
 
 @media (min-width: 1025px) {
@@ -52,7 +56,7 @@
     }
     
     .primmary-welcome {
-        flex-grow: 2;
+        flex-grow: 7.5;
     }
     
 }
