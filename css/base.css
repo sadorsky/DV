@@ -42,7 +42,6 @@ h3 {
 a {
     font-size: 1.1em;
 	text-decoration: none;
-    margin-right: 10px;
 }
 
 a:hover {
@@ -207,8 +206,12 @@ img {
 		font-size: 1em;
 	}
     
-    
-    
+    .button-menu {
+        margin: 0 10px 0 10px;
+        background-color: #F1F6F8;
+        border-radius: 20px;
+    }
+        
 }
 @media (min-width: 1025px) {
 	.main-header,
