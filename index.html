@@ -4,16 +4,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Dew Valley Foods</title>
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap-theme.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
-	
+    <!-- /Bootstrap -->
+    <!-- stylesheets files -->
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/flexbox.css">
+    <!-- /stylesheets files -->
 	
-	<script src="js/bootstrap.js" crossorigin="anonymous"></script>
-	<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	
@@ -123,25 +124,39 @@ Strategic planning and product innovation are at the heart of our success, suppo
             <h2>Innovation &amp; NPD</h2>
             <img src="img/npd-1.jpg">
             <p>Dew Valley Foods offer highly innovative products to suit a wide range of applications. We are confident that we can create bacon solutions to meet your business needs. We pride ourselves on being able to deliver innovative bacon products in an ever changing market.</p>
-            <button class="button-more" type="button" data-toggle="modal">Read More</button>
+            <button type="button" class="button-more" data-toggle="modal" data-target="#exampleModalCenter">Read More</button>
+            <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLongTitle">Innovation &amp; NPD</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>We closely follow and analyse food trends to ensure we are at the cutting edge of what the consumer wants and we can react quickly to key trends. We are totally customer-orientated, with a dedicated NPD team and an extensive investment programme designed to accommodate major customers without prejudicing capacity. All processes are overseen by our highly experienced and enthusiastic management team. Our state of the art NPD facilities allow us easily create customer specific solutions and demonstrate these to our customers.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <!-- End of Modal -->
         </div>
         
     </div>
 
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              ...
-            </div>
-          </div>
-        </div>
+
     
  
 	<footer class="main-footer txt-center">
 		<span>&copy;2017 Dew Valley Food | Designed by Lukasz Sadorski</span>
 	</footer>
 
-
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
