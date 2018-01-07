@@ -13,6 +13,10 @@ body {
 	margin: 0;
 }
 
+.row {
+    margin: 0 auto;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -58,6 +62,7 @@ a:hover {
 img {
 	max-width: 100%;
     border-radius: 5px;
+    margin: 0 0 15px 0;
 }
 
 /* ================================= 
@@ -107,7 +112,6 @@ img {
 .banner {
     color: #fff;
     background-size: cover;
-    background-attachment: fixed;
     background-position: bottom;
     padding: 3.2em 0;
 	margin-bottom: 48px;
@@ -207,9 +211,13 @@ img {
 	}
     
     .button-menu {
-        margin: 0 10px 0 10px;
+        margin: 0 10px 5px; 10px;
         background-color: #F1F6F8;
         border-radius: 20px;
+    }
+    
+    .banner {
+        background-attachment: fixed;
     }
         
 }
