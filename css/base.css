@@ -102,6 +102,11 @@ img {
 	color: #093a58;
 }
 
+button {
+    border: none;
+    background: none;
+}
+
 /* ---- Layout Containers ---- */
 
 .main-header {
