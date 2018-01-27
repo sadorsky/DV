@@ -27,6 +27,10 @@ h2 {
     font-size: 1.7em;
 }
 
+h3 {
+    font-size: 1.5em;
+}
+
 p {
 	font-size: 1.1em;
 	margin-bottom: 1.8em;
@@ -34,6 +38,7 @@ p {
 
 h2,
 h3,
+h4,
 a {
 	color: #093a58;
 }
@@ -65,6 +70,12 @@ img {
     margin: 0 0 15px 0;
 }
 
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -74,6 +85,7 @@ img {
 .name {
 	font-size: 1.35em;
 	margin: 0;
+    display: none;
 }
 
 /*
@@ -94,9 +106,9 @@ img {
 	padding: 10px 15px;
 }
 .main-nav a {
-	font-size: .95em;
-	color: #3acec2;
-	text-transform: uppercase;
+	font-size: .98em;
+	color: #747474;
+/*	text-transform: uppercase;*/
 }
 .main-nav a:hover {
 	color: #093a58;
@@ -217,7 +229,15 @@ button {
     
     .button-menu {
         margin: 0 10px 5px; 10px;
+/*
         background-color: #F1F6F8;
+        border-radius: 20px;
+*/
+    }
+    
+    .contact-border {
+/*        background-color: #F1F6F8;*/
+        border: 1px solid #bababa;
         border-radius: 20px;
     }
     
@@ -232,4 +252,8 @@ button {
 		width: 80%;
 		max-width: 1150px;
 	}
+    
+    .name {
+        display: inline-block;
+    }
 }
