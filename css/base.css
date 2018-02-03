@@ -289,6 +289,35 @@ button {
         border-radius: 20px;
 */
     }
+    
+.main-header>ul>li>a {
+  position: relative;
+  text-decoration:none;
+}
+
+.main-header>ul>li>a:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  background-color: #868686;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.main-header>ul>li:not(:nth-child(4))>a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
 
     .contact-border {
         /*        background-color: #F1F6F8;*/
