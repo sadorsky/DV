@@ -16,24 +16,32 @@
     <link rel="stylesheet" href="css/flexbox.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- /stylesheets files -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-  type="text/javascript"></script>
-   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?client=YOUR_CLIENT_ID&v=3.30&callback=initMap"></script>
     
+    <!-- Navbar Class Script
+        <script type="text/javascript">
+            $(window).on('scroll', function() {
+                if($window).scrollTop()) {
+                    $('header').addClass('dark');
+                }
+                else {
+                    $('header').removeClass('dark');
+                }
+            })
+        </script>
+    -->
 </head>
 
 <body>
 
-    <header id="header" class="main-header">
-        <!--		<img class="comp-logo" src="img/comp-logo.png" alt="company logo">-->
-        <h1 class="name"><a href="#">Dew Valley Foods</a></h1>
-        <ul class="main-nav">
-            <li><a class="button-menu" href="#header">About Us</a></li>
-            <li><a class="button-menu" href="#products">Products</a></li>
-            <li><a class="button-menu" href="#business">Our Business</a></li>
-            <li><a class="button-menu contact-border" href="#contact">Contact</a></li>
-        </ul>
+    <header id="header" class="main-header clearfix">
+<!--            <h1 class="name"><a href="#" >Dew Valley Foods</a></h1>-->
+            <img class="comp-logo" src="img/comp-logo.png" alt="company logo">
+            <ul class="main-nav">
+                <li><a class="button-menu" href="#">About Us</a></li>
+                <li><a class="button-menu" href="#products">Products</a></li>
+                <li><a class="button-menu" href="#business">Our Business</a></li>
+                <li><a class="button-menu contact-border" href="#contact">Contact</a></li>
+            </ul>
     </header>
     <!--/.main-header-->
 
@@ -320,15 +328,14 @@
                 </div>
                 
                 <div class="social-links social-media">
-                    <a href="https://twitter.com/lsadorski" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/lukasz-sadorski-75a628127/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://github.com/sadorsky" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/3302170/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="http://google.com/" target="_blank"><i class="fa fa-youtube"></i></a>
                 </div>
 
                 <div class="footer-author-info box">
 
-                <p>Designed by:</p>
-                <img src="img/sadorski.png" alt="logo of designer">
+                <img href="http://sadorski.com" target="_blank" src="img/sadorski.png" alt="logo of designer">
 
                 </div>
             </div>

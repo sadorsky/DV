@@ -78,19 +78,19 @@ img {
 
 /* ---- Navigation ---- */
 
-.name {
-    font-size: 1.35em;
-    margin: 0;
-    display: none;
+h1 a {
+    color: #fff;
 }
 
-/*
 .comp-logo {
-	width: 150px;
+	width: 105px;
     margin: 0;
     align-content: center;
 }
-*/
+
+#header img { /* Company Logo - won't display until desktop res */
+    display: none;
+}
 
 .main-nav {
     margin-top: 5px;
@@ -106,7 +106,7 @@ img {
 .main-nav a {
     font-size: .98em;
     color: #747474;
-    /*	text-transform: uppercase;  */
+/*    	text-transform: uppercase;  */
 }
 
 .button-menu {
@@ -114,7 +114,8 @@ img {
 }
 
 .main-nav a:hover {
-    color: #093a58;
+    color: #d4d4d4;
+    transition: .3s;
 }
 
 /* ---- BANNERS ---- */
@@ -137,6 +138,7 @@ img {
 
 .banner-main {
     background-image: url(../img/2.jpg);
+    position: relative;
 }
 
 .banner-products {
@@ -188,6 +190,10 @@ img {
     display: inline-block;
 }
 
+#contact {
+    max-height: 400px;
+}
+
 #footer {
     background-color: #c6c6c6;
 }
@@ -211,7 +217,7 @@ button {
     color: #fff;
     text-align: center;
     padding: .625em 1.25em;
-    background: #3acec2;
+    background: #3884ad;
     border-radius: .35em;
     margin-top: auto;
     align-self: flex-start;
@@ -267,8 +273,8 @@ footer img {
 }
 
 footer .fa {
-    color: #9d9d9d;
-    background-color: #2e3238;
+    color: #d4d4d4;
+    background-color: #4b4b4b;
     padding: 10px;
     margin: 3px;
     border-radius: 50%;
@@ -289,11 +295,17 @@ footer .fa:hover {
  ======================== */
 
 @media (min-width: 769px) {
+    
+    body {
+/*		padding-top: 67px;  Nav padding */
+	}
+    
     .main-header,
     .row {
         width: 90%;
         margin: 0 auto;
     }
+    
     .tagline {
         font-size: 1.4em;
     }
@@ -301,59 +313,78 @@ footer .fa:hover {
     .small {
         font-size: 1em;
     }
+    
+    .main-nav a {
+        color: #fff;
+    }
 
     .button-menu {
         margin: 0 10px 5px;
     }
     
+    .main-header {
+        position: fixed;
+		background: rgba(2, 63, 101, 0.85); /* new background */
+		box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+    }
+    
     .main-header > ul > li > a {
-      position: relative;
-      text-decoration:none;
+        position: relative;
+        text-decoration:none;
     }
 
     .main-header > ul > li > a:before {
-      content: "";
-      position: absolute;
-      width: 50%;
-      height: 1px;
-      bottom: 0;
-      left: 25%;
-      background-color: #868686;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        bottom: 0;
+        left: 25%;
+        background-color: #e2e2e2;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.2s ease-in-out 0s;
+        -moz-transition: all 0.2s ease-in-out 0s;
+        transition: all 0.2s ease-in-out 0s;
     }
 
     .main-header > ul > li:not(:nth-child(4)) > a:hover:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        transform: scaleX(1);
     }
-
+    
+    .banner-main {
+        padding-top: 120px;
+    }
+    
     .contact-border {
-        /*        background-color: #F1F6F8;*/
-        border: 1px solid #bababa;
+        border: 1px solid #fff;
         border-radius: 20px;
-    }
-
-    .banner {
-        background-attachment: fixed;
     }
 
 
 }
 
 @media (min-width: 1025px) {
-    .main-header,
+    
     .row {
         width: 80%;
         max-width: 1150px;
     }
-
-    .name {
+    
+    #header img {
         display: inline-block;
+    }
+    
+    .banner {
+        background-attachment: fixed;
     }
     
     .footer-info {
@@ -365,5 +396,7 @@ footer .fa:hover {
         font-size: 0.9em;
         align-items: flex-end;
     }
+    
+    
     
 }
