@@ -60,6 +60,10 @@ a:hover {
     text-decoration: none;
 }
 
+hr {
+    margin: 5px 0 15px;
+}
+
 img {
     max-width: 100%;
     border-radius: 5px;
@@ -270,6 +274,7 @@ footer img {
 
 .social-links {
     text-align: center;
+    margin-bottom: 1.8em;
 }
 
 footer .fa {
@@ -385,6 +390,18 @@ footer .fa:hover {
     
     .banner {
         background-attachment: fixed;
+    } 
+    
+    .footer-row {
+        width: 60%;
+        margin: auto;
+    }
+    
+    .footer-comp-info,
+    .social-links,
+    .footer-author-info {
+        float: left;
+        width: 33.3%;
     }
     
     .footer-info {
@@ -394,7 +411,7 @@ footer .fa:hover {
 
     .footer-author-info {
         font-size: 0.9em;
-        align-items: flex-end;
+        text-align: right;
     }
     
     
