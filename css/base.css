@@ -87,12 +87,13 @@ h1 a {
 }
 
 .comp-logo {
-	width: 105px;
+    width: 105px;
     margin: 0;
     align-content: center;
 }
 
-#header img { /* Company Logo - won't display until desktop res */
+#header img {
+    /* Company Logo - won't display until desktop res */
     display: none;
 }
 
@@ -110,7 +111,7 @@ h1 a {
 .main-nav a {
     font-size: .98em;
     color: #747474;
-/*    	text-transform: uppercase;  */
+    /*    	text-transform: uppercase;  */
 }
 
 .button-menu {
@@ -141,12 +142,15 @@ h1 a {
 }
 
 .banner-main {
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/n1.jpg);
     position: relative;
 }
 
 .banner-products {
-    background-image: url(../img/products.jpg);
+    background-image: url(../img/n4.jpg);
+    filter:contrast(1.2);
+    -webkit-filter: contrast(1.2);
+    -moz-filter: contrast(1.2);
     /*
     -webkit-filter: grayscale(0.3);
     -moz-filter: grayscale(0.3);
@@ -155,13 +159,12 @@ h1 a {
 }
 
 .banner-business {
-    background-image: url(../img/2.jpg);
-/* 
+    background-image: url(../img/n3.jpg);
+    /* 
     -webkit-filter: grayscale(0.2);
     -moz-filter: grayscale(0.2);
     filter: grayscale(0.2);
 */
-
 }
 
 .headline {
@@ -169,7 +172,7 @@ h1 a {
 }
 
 .shadow {
-    text-shadow: 4px 2px 10px rgba(0, 0, 0, 1);
+    text-shadow: 4px 2px 10px rgba(0, 0, 0, 2);
 }
 
 /* ---- Layout Containers ---- */
@@ -196,6 +199,11 @@ h1 a {
 
 #contact {
     max-height: 400px;
+    position: ;
+}
+
+.contact-label {
+    display: none;
 }
 
 #footer {
@@ -231,33 +239,18 @@ button {
     text-align: center;
 }
 
-.contact-title {
-    color: #FFF;
-    text-align: center;
-    font-size: 3em;
-    margin: 50px;
-}
-
-.contact-details {
-    display: inline-block;
-    color: #f0f0f0;
-    font-size: 1.2em;
-    font-weight: 100;
-    margin: 0 40px 20px 0;
-}
-
 #contact li .fa {
     display: inline-block;
-	margin-right: 10px;
-	padding-top: 5px;
-	font-size: 21px;
-	color: #ffffff;
+    margin-right: 10px;
+    padding-top: 5px;
+    font-size: 21px;
+    color: #ffffff;
 }
 
 footer img {
-	display: inline-block;
-	width: 10em;
-	height: auto;
+    display: inline-block;
+    width: 10em;
+    height: auto;
     margin-bottom: 30px;
 }
 
@@ -270,6 +263,10 @@ footer img {
     font-size: 0.83em;
     align-items: center;
     text-align: center;
+}
+
+.footer-author-info p {
+    margin: 5px;
 }
 
 .social-links {
@@ -300,17 +297,17 @@ footer .fa:hover {
  ======================== */
 
 @media (min-width: 769px) {
-    
+
     body {
-/*		padding-top: 67px;  Nav padding */
-	}
-    
+        /*		padding-top: 67px;  Nav padding */
+    }
+
     .main-header,
     .row {
         width: 90%;
         margin: 0 auto;
     }
-    
+
     .tagline {
         font-size: 1.4em;
     }
@@ -318,7 +315,7 @@ footer .fa:hover {
     .small {
         font-size: 1em;
     }
-    
+
     .main-nav a {
         color: #fff;
     }
@@ -326,19 +323,20 @@ footer .fa:hover {
     .button-menu {
         margin: 0 10px 5px;
     }
-    
+
     .main-header {
         position: fixed;
-		background: rgba(2, 63, 101, 0.85); /* new background */
-		box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
-		width: 100%;
-		top: 0;
-		z-index: 1000;
+        background: rgba(2, 63, 101, 0.85);
+        /* new background */
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+        width: 100%;
+        top: 0;
+        z-index: 1000;
     }
-    
+
     .main-header > ul > li > a {
         position: relative;
-        text-decoration:none;
+        text-decoration: none;
     }
 
     .main-header > ul > li > a:before {
@@ -364,11 +362,11 @@ footer .fa:hover {
         -moz-transform: scaleX(1);
         transform: scaleX(1);
     }
-    
+
     .banner-main {
         padding-top: 120px;
     }
-    
+
     .contact-border {
         border: 1px solid #fff;
         border-radius: 20px;
@@ -378,42 +376,77 @@ footer .fa:hover {
 }
 
 @media (min-width: 1025px) {
-    
+
     .row {
         width: 80%;
         max-width: 1150px;
     }
-    
+
     #header img {
         display: inline-block;
     }
-    
+
     .banner {
         background-attachment: fixed;
-    } 
-    
+    }
+
     .footer-row {
         width: 60%;
         margin: auto;
     }
-    
+
     .footer-comp-info,
     .social-links,
     .footer-author-info {
         float: left;
         width: 33.3%;
     }
-    
+
     .footer-info {
         font-size: 0.9em;
         text-align: left;
     }
 
     .footer-author-info {
-        font-size: 0.9em;
+        font-size: 0.8em;
         text-align: right;
     }
     
-    
-    
+    #contact {
+      position: relative;
+    }
+
+    .contact-label {
+        display: block;
+        position: absolute;
+        border-radius: 4%;
+        top: 15%;
+        right: 1%;
+        z-index: 99;
+        background: rgba(2, 63, 101, 0.85);
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.6);
+    }
+
+    .contact-title {
+        color: #FFF;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 25px;
+    }
+
+    .contact-details {
+        display: inline-block;
+        color: #f0f0f0;
+        font-size: 1em;
+        font-weight: 100;
+        margin: 0 40px 20px 0;
+    }
+
+    #contact li {
+        list-style-type: none;
+        margin: 0 15px 0 15px;
+    }
+
+
+
 }
