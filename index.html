@@ -10,26 +10,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap-theme.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
+<!-- SCROLL PAGE JS
     <link rel="stylesheet" href="js/scroll.js">
+    <script src="js/scroll.js" crossorigin="anonymous"></script>
+-->
     <!-- /Bootstrap -->
     <!-- stylesheets files -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/flexbox.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- /stylesheets files -->
-
-    <!-- Navbar Class Script
-        <script type="text/javascript">
-            $(window).on('scroll', function() {
-                if($window).scrollTop()) {
-                    $('header').addClass('dark');
-                }
-                else {
-                    $('header').removeClass('dark');
-                }
-            })
-        </script>
-    -->
 </head>
 
 <body>
@@ -37,12 +27,16 @@
     <header id="header" class="main-header clearfix">
         <!--            <h1 class="name"><a href="#" >Dew Valley Foods</a></h1>-->
         <a href="#"><img class="comp-logo" src="img/comp-logo.png" alt="company logo"></a>
-        <ul class="main-nav">
-            <li><a class="button-menu page-scroll" href="#">About Us</a></li>
-            <li><a class="button-menu page-scroll" href="#products">Products</a></li>
-            <li><a class="button-menu page-scroll" href="#business">Our Business</a></li>
-            <li><a class="button-menu contact-border page-scroll" href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav">
+           <label for="toggle">&#9776;</label>
+           <input type="checkbox" id="toggle"/>
+            <ul class="main-nav">
+                <li><a class="button-menu page-scroll" href="#">About Us</a></li>
+                <li><a class="button-menu page-scroll" href="#products">Products</a></li>
+                <li><a class="button-menu page-scroll" href="#business">Our Business</a></li>
+                <li><a class="button-menu contact-border page-scroll" href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <!--/.main-header-->
 
@@ -369,6 +363,17 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    
+<!--
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
+-->
     
     <!-- jQuery Version 1.11.0 -->
     <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
