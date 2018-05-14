@@ -13,16 +13,6 @@ body {
     margin: 0;
 }
 
-.videowrapper {
-    width: 100%;
-}
-.videowrapper iframe {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .row {
     margin: 0 auto;
 }
@@ -48,6 +38,14 @@ h3 {
 p {
     font-size: 1.1em;
     margin-bottom: 1.8em;
+}
+
+.p-blue {
+    color: #093a58;
+}
+
+.p-gray {
+    color: #3c3c3c;
 }
 
 h2,
@@ -167,12 +165,12 @@ label {
 }
 
 .banner-main {
-    background-image: url(../img/n1.jpg);
+    background-image: url(../img/n11.jpg);
     position: relative;
 }
 
 .banner-products {
-    background-image: url(../img/n4.jpg);
+    background-image: url(../img/n44.jpg);
     filter:contrast(1.2);
     -webkit-filter: contrast(1.2);
     -moz-filter: contrast(1.2);
@@ -184,7 +182,7 @@ label {
 }
 
 .banner-business {
-    background-image: url(../img/n3.jpg);
+    background-image: url(../img/n33.jpg);
     /* 
     -webkit-filter: grayscale(0.2);
     -moz-filter: grayscale(0.2);
@@ -235,6 +233,41 @@ label {
 }
 
 /* ---- Layout/Page Elements ---- */
+
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/sakura.png);
+  background-color: rgb(250,228, 216);
+}
+
+
+
+.videowrapper {
+    width: 100%;
+}
+.videowrapper iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 button {
     border: none;
